@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Notes Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <button id="themeBtn">🌙 Dark Mode</button>
+
+
+
+        <h1>AI Study Notes Generator</h1>
+
+        <input
+            type="text"
+            id="topic"
+            placeholder="Enter Topic"
+        >
+
+        <select id="level">
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+        </select>
+
+        <select id="length">
+            <option value="Short">Short</option>
+            <option value="Detailed">Detailed</option>
+        </select>
+
+        <button id="generateBtn">
+            Generate Notes
+        </button>
+
+        <div id="output"></div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
